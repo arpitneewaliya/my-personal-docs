@@ -1,29 +1,32 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import starlightThemeGalaxy from 'starlight-theme-galaxy'
 
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
 		starlight({
+			plugins: [starlightThemeGalaxy()],
 			title: 'MyDocs',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Git',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Basics', slug: 'git/basics' },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Linux',
+					items: [
+						{ label: 'Introduction', slug: 'linux-guide/intro' },
+					],
 				},
 				{
-					label: 'Git Basics',
+					label: 'Python',
 					items: [
-						{ label: 'Commands', slug: 'git-basics/commands' },
+						{ label: 'Introduction', slug: 'python/intro' },
 					],
 				},
 			],
