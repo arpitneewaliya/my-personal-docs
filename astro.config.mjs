@@ -6,7 +6,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'MyDocs',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
@@ -19,6 +19,12 @@ export default defineConfig({
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Git Basics',
+					items: [
+						{ label: 'Commands', slug: 'git-basics/commands' },
+					],
 				},
 			],
 		}),
