@@ -8,13 +8,23 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			plugins: [starlightThemeGalaxy()],
-			title: 'MyDocs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'DevHaiku',
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/arpitneewaliya/my-personal-docs' }],
 			sidebar: [
 				{
 					label: 'Git',
 					items: [
 						{ label: 'Basics', slug: 'git/basics' },
+					],
+				},
+				{
+					label: 'Object Oriented Programming(OOP)',
+					items: [
+						{ label: 'Introduction', slug: 'oop/intro' },
+						{ label: 'Inheritance', slug: 'oop/inheritance' },
+						{ label: 'Abstraction', slug: 'oop/abstraction' },
+						{ label: 'Polymorphism', slug: 'oop/polymorphism' },
+						{ label: 'Encapsulation', slug: 'oop/encapsulation' },
 					],
 				},
 				{
