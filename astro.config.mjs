@@ -5,6 +5,8 @@ import starlightThemeGalaxy from "starlight-theme-galaxy";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://arpitneewaliya.github.io',
+  base: '/my-personal-docs/',
   integrations: [
     starlight({
       plugins: [starlightThemeGalaxy()],
