@@ -27,6 +27,7 @@ public class Dog extends Animal {
 }
 
 ```
+
 :::note
 In the above example:
 
@@ -144,3 +145,52 @@ Output
 Animal is making a sound.
 Cat is meowing...
 ```
+
+## Types of inheritance in java
+
+Java has 5 types of inheritance. We will discuss each one by one.
+
+### 1. Single Inheritance
+
+This is the simplest type of inheritance. There is one parent and one child.
+
+```java
+class A {}
+class B extends A {}
+```
+
+### 2. Multilevel Inheritance
+
+There are multiple levels at which inheritance works here. Just like, grandparent -> parent -> child relation.
+Each level inherits everything from all the levels above it.
+
+```java
+class A {}
+class B extends A {}
+class C extends B {}
+```
+
+### 3. Hierarchial Inheritance
+
+One parent, multiple children. All children independently inherit from the same parent, but they don't know about each other.
+
+```java
+class A {}
+class B extends A {}
+class C extends A {}
+class D extends A {}
+```
+
+### 4. Multiple Inheritance
+
+:::caution
+Java **does not** support multiple inheritance through classes.
+But it fully supports it through [interfaces](/my-personal-docs/oop/interface/).
+:::
+
+A class inheriting from more than one parents.
+E.g. class `Eagle` inherits from both `Animal` and `Bird` classes.
+
+### 5. Hybrid Inheritance
+
+A combination of two or more types of inheritance in the same program. For example: multilevel (class extends class) + multiple (class implements interfaces). Java allows this cleanly because interfaces prevent ambiguity.

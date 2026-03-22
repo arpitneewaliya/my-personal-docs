@@ -27,6 +27,7 @@ export default defineConfig({
             { label: "Abstraction", slug: "oop/abstraction" },
             { label: "Polymorphism", slug: "oop/polymorphism" },
             { label: "Encapsulation", slug: "oop/encapsulation" },
+            { label: "Interfaces", slug: "oop/interface" },
           ],
         },
         {
